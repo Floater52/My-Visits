@@ -1,4 +1,4 @@
-.headline	{ 
+.headline	{
 	font-size: 1.9rem;
 	font-weight: 300;
 	color: $mainBlue;
@@ -35,7 +35,7 @@
 	strong	{
 		font-weight: 400;
 	}
-
+	
 	&--b-margin-small	{
 		margin-bottom: .5em;
 	}
