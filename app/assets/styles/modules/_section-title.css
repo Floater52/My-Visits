@@ -11,8 +11,8 @@
 		font-weight: 500;
 	}
 
-	&--blue	{
-		color: $mainBlue;
+	&--brown	{
+		color: $mainBrown;
 	}
 
 	&--less-margin	{

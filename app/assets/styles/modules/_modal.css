@@ -17,6 +17,10 @@
     transform: scale(1);
   }
 
+  &__contact {
+    align-items: center;
+  }
+
   &__inner  {
     position: absolute;
     width: 100%;
@@ -26,6 +30,7 @@
 
   &__description  {
     text-align: center;
+    color: $mainBrown;
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 1.65;

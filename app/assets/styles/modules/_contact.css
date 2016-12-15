@@ -1,0 +1,34 @@
+#contact-main {
+  width: 100%;
+  align: center;
+  padding-left: 25px;
+  background-color: $mainTan;
+}
+
+#contact-main h1 {
+  align: center;
+  color: $mainBrown;
+  padding-top: 10px;
+  margin-left: 25%;
+}
+
+#contact-main label {
+  color: $mainBrown;
+}
+
+#contact-main label button {
+  color: $mainBrown;
+}
+
+.modal #submit  {
+  border-radius: 10px;
+  border-color: $mainTan;
+  color: $mainBrown;
+  background-color: #FFF;
+}
+
+.modal #message {
+  float: left;
+  width: 90%;
+  height: auto;
+}

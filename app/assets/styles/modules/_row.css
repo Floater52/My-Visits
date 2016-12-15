@@ -56,7 +56,7 @@
 
 	&__medium-8	{
 		float: left;
-		width: 66.66%;
+		width: 50%;
 	}
 
 	&__medium-8--smaller	{
@@ -86,7 +86,7 @@
 
  &__large-8	{
 	 float: left;
-	 width: 66.66%;
+	 width: 63.66%;
  }
 
  &__large-8--smaller	{
