@@ -18,6 +18,21 @@
   <script src="assets/scripts/modules/lightbox.min.js"></script>
   <!-- endbuild -->
 
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- endbuild -->
+
+  <script>
+     $(function(){
+        $('.okc-mem').load("assets/pages/okc-mem.html"),
+        $('.fireworks').load("assets/pages/fireworks.html"),
+        $('.cbh').load("assets/pages/cbh.html"),
+        $('.gc').load("assets/pages/gc.html"),
+        $('.jdh').load("assets/pages/jdh.html"),
+        $('.reagan').load("assets/pages/reagan.html");
+     });
+  </script>
+
   <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
   <script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
   <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
@@ -27,7 +42,7 @@
 <body>
   <header class="site-header">
     <div class="wrapper">
-      <div class="site-header__logo">My Photos
+      <div class="site-header__logo">Rick's Photos
         <div class="site-header__logo__graphic"></div>
       </div>
 
@@ -44,7 +59,7 @@
             <li><a href="#trinity" id="trinity-link">Trinity Site</a></li>
             <li><a href="#alligator-farm" id="alligator-farm-link">Alligator Farm</a></li>
             <li><a href="#ksc" id="ksc-link">Kennedy Space Center</a></li>
-              <li><a href="#random-photos" id="random-link">Random Photos</a></li>
+              <li><a href="#random-photos" id="random-link">Other Galleries</a></li>
           </ul>
         </nav>
       </div>
@@ -204,8 +219,7 @@
     <div class="wrapper wrapper--no-padding-until-large">
       <h2 class="section-title section-title--brown">Kennedy Space Center, Florida<span class="icon section-title__icon"></span>
         <br />
-         <div class="thumbnails thumbnails-6-wide group">
-         <a href="assets/images/ksc/large/1st_manned_orbital_flight.jpg" data-lightbox="ksc" data-title="1st manned orbital flight"><img src="assets/images/ksc/thumbs/1st_manned_orbital_flight.jpg" alt="" /></a>
+         <div class="thumbnails thumbnails-6-wide group"><a href="assets/images/ksc/large/1st_manned_orbital_flight.jpg" data-lightbox="ksc" data-title="1st manned orbital flight"><img src="assets/images/ksc/thumbs/1st_manned_orbital_flight.jpg" alt="" /></a>
          <a href="assets/images/ksc/large/apollo_14_command_module.jpg" data-lightbox="ksc" data-title="Apollo 14 Command Module"><img src="assets/images/ksc/thumbs/apollo_14_command_module.jpg" alt="Apollo 14 Command Module" /></a>
          <a href="assets/images/ksc/large/apollo_command_module.jpg" data-lightbox="ksc" data-title="Apollo Command Module"><img src="assets/images/ksc/thumbs/apollo_command_module.jpg" alt="Apollo Command Module" /></a>
          <a href="assets/images/ksc/large/apollo_control center.jpg" data-lightbox="ksc" data-title="Apollo Control Center"><img src="assets/images/ksc/thumbs/apollo_control center.jpg" alt="Apollo Control Center" /></a>
@@ -259,52 +273,20 @@
 
 <div id="random-photos" class="page-section page-section--random-photos page-section--blue" data-matching-link="#random-link">
   <div class="wrapper">
-    <h2 class="section-title">Random Photos</h2>
+    <h2 class="section-title">Other Galleries</h2>
       <br />
       <br />
     <div class="row row--gutters-large generic-content-container">
-      <div class="thumbnails thumbnails-a group">
-        <a href="assets/images/random/large/IMG_0489.jpg" data-lightbox="fw" data-title="Prescott Valley, Az Fireworks"><img src="assets/images/random/thumbs/IMG_0489.jpg" alt="Fireworks" /></a>
-          <a href="assets/images/random/large/IMG_0557.jpg" data-lightbox="fw" data-title="Prescott Valley, Az Fireworks"><img src="assets/images/random/thumbs/IMG_0557.jpg" alt="Fireworks" /></a>
-          <a href="assets/images/random/large/IMG_0658.jpg" data-lightbox="fw" data-title="Prescott Valley, Az Fireworks"><img src="assets/images/random/thumbs/IMG_0658.jpg" alt="Fireworks" /></a>
-          <a href="assets/images/random/large/IMG_0660.jpg" data-lightbox="fw" data-title="Prescott Valley, Az Fireworks"><img src="assets/images/random/thumbs/IMG_0660.jpg" alt="Fireworks" /></a>
-              <a href="assets/images/random/large/PV_0004.jpg" data-lightbox="fw" data-title="Prescott Valley, Az Fireworks"><img src="assets/images/random/thumbs/PV_0004.jpg" alt="Fireworks" /></a>
-              <a href="assets/images/random/large/PV_0005.jpg" data-lightbox="fw" data-title="Prescott Valley, Az Fireworks"><img src="assets/images/random/thumbs/PV_0005.jpg" alt="Fireworks" /></a>
-              <a href="assets/images/random/large/PV_0006.jpg" data-lightbox="fw" data-title="Prescott Valley, Az Fireworks"><img src="assets/images/random/thumbs/PV_0006.jpg" alt="Fireworks" /></a>
-              <a href="assets/images/random/large/PV_0007.jpg" data-lightbox="fw" data-title="Prescott Valley, Az Fireworks"><img src="assets/images/random/thumbs/PV_0007.jpg" alt="Fireworks" /></a>
+      <div class="thumbnails thumbnails-6-wide thumbnails-a group">
+      <div class="fireworks"></div>
+      <div class="okc-mem"></div>
+      <div class="cbh"></div>
+      <div class="gc"></div>
+      <div class="jdh"></div>
+      <div class="reagan"></div>
       </div>
-        <h2 class="section-title">Oklahoma City Memorial</h2>
-      <div class="thumbnails thumbnails-a group">
-        <a href="assets/images/okc/large/okc1.jpg" data-lightbox="okc" data-title="Newspaper Office Damage across the street from Murrah Federal Building Sept 1995"><img src="assets/images/okc/thumbs/okc1.jpg" alt="Damage" /></a>
-          <a href="assets/images/okc/large/okc2.jpg" data-lightbox="okc" data-title="Parking garage damage across from Murrah building Sept 1995"><img src="assets/images/okc/thumbs/okc2.jpg" alt="Parking garage damageokc2" /></a>
-          <a href="assets/images/okc/large/okc3.jpg" data-lightbox="okc" data-title="Water Works damage across from Murrah building"><img src="assets/images/okc/thumbs/okc3.jpg" alt="Water Works damage" /></a>
-          <a href="assets/images/okc/large/okc4.jpg" data-lightbox="okc" data-title="Street patch where bomb truck was parked Sept 1995"><img src="assets/images/okc/thumbs/okc4.jpg" alt="Street patch" /></a>
-          <a href="assets/images/okc/large/Vacation 026.jpg" data-lightbox="okc" data-title="Memorial Plaque"><img src="assets/images/okc/thumbs/Vacation 026.jpg" alt="Memorial Plaque" /></a>
-          <a href="assets/images/okc/large/Vacation 025.jpg" data-lightbox="okc" data-title="OKC Memorial entrance"><img src="assets/images/okc/thumbs/Vacation 025.jpg" alt="Memorial entrance" /></a>
-          <a href="assets/images/okc/large/Vacation 034.jpg" data-lightbox="fw" data-title="Time of bombing etched into wall"><img src="assets/images/okc/thumbs/Vacation 034.jpg" alt="Time of bombing etched into wall" /></a>
-          <a href="assets/images/okc/large/Vacation 027.jpg" data-lightbox="okc" data-title="Chalk messages from visitors"><img src="assets/images/okc/thumbs/Vacation 027.jpg" alt="Vacation 027chalk messages" /></a>
-          <a href="assets/images/okc/large/Vacation 028.jpg" data-lightbox="okc" data-title="Message wall"><img src="assets/images/okc/thumbs/Vacation 028.jpg" alt="Message wall" /></a>
-          <a href="assets/images/okc/large/Vacation 029.jpg" data-lightbox="okc" data-title="Message wall"><img src="assets/images/okc/thumbs/Vacation 029.jpg" alt="Message wall" /></a>
-          <a href="assets/images/okc/large/Vacation 032.jpg" data-lightbox="okc" data-title="Memorial visitors"><img src="assets/images/okc/thumbs/Vacation 032.jpg" alt="Memorial visitors" /></a>
-          <a href="assets/images/okc/large/Vacation 033.jpg" data-lightbox="okc" data-title="Memorial tree where firefighters took breaks during recovery of victims"><img src="assets/images/okc/thumbs/Vacation 033.jpg" alt="Memorial tree" /></a>
-          <a href="assets/images/okc/large/Vacation 035.jpg" data-lightbox="okc" data-title="Reflecting pond where street once was"><img src="assets/images/okc/thumbs/Vacation 035.jpg" alt="reflecting pond" /></a>
-          <a href="assets/images/okc/large/Vacation 045.jpg" data-lightbox="okc" data-title="Reflecting pond where street once was"><img src="assets/images/okc/thumbs/Vacation 045.jpg" alt="reflecting pond" /></a>
-          <a href="assets/images/okc/large/Vacation 036.jpg" data-lightbox="fw" data-title="Victim Memorial Chairs"><img src="assets/images/okc/thumbs/Vacation 036.jpg" alt="Victim Memorial Chairs" /></a>
-          <a href="assets/images/okc/large/Vacation 037.jpg" data-lightbox="okc" data-title="Victim Memorial Chairs"><img src="assets/images/okc/thumbs/Vacation 037.jpg" alt="Victim Memorial Chairs" /></a>
-          <a href="assets/images/okc/large/Vacation 038.jpg" data-lightbox="okc" data-title="Apartment building 2 blocks away where differential from bomb truck landedVacation 039"><img src="assets/images/okc/thumbs/Vacation 038.jpg" alt="Apartment building 2 blocks away damaged" /></a>
-          <a href="assets/images/okc/large/Vacation 039.jpg" data-lightbox="okc" data-title="Damaged Newspaper office across from Murrah building"><img src="assets/images/okc/thumbs/Vacation 039.jpg" alt="Damaged Newspaper office across from Murrah building" /></a>
-          <a href="assets/images/okc/large/Vacation 040.jpg" data-lightbox="okc" data-title="Damaged Newspaper office across from Murrah building"><img src="assets/images/okc/thumbs/Vacation 040.jpg" alt="Damaged Newspaper office across from Murrah building" /></a>
-          <a href="assets/images/okc/large/Vacation 041.jpg" data-lightbox="okc" data-title="Build across from Murrah building where memorial museum is located"><img src="assets/images/okc/thumbs/Vacation 041.jpg" alt="Build across from Murrah building where memorial museum is located" /></a>
-          <a href="assets/images/okc/large/Vacation 042.jpg" data-lightbox="okc" data-title="Memorial chairs"><img src="assets/images/okc/thumbs/Vacation 042.jpg" alt="Memorial chairs" /></a>
-          <a href="assets/images/okc/large/Vacation 043.jpg" data-lightbox="okc" data-title="Memorial chairs"><img src="assets/images/okc/thumbs/Vacation 043.jpg" alt="Memorial chairs" /></a>
-          <a href="assets/images/okc/large/Vacation 044.jpg" data-lightbox="okc" data-title="Back wall original wall from Murrah building"><img src="assets/images/okc/thumbs/Vacation 044.jpg" alt="Back wall original wall from Murrah building" /></a>
-          <a href="assets/images/okc/large/Vacation 046.jpg" data-lightbox="okc" data-title="Message from rescuers"><img src="assets/images/okc/thumbs/Vacation 046.jpg" alt="Message from rescuers" /></a>
-          <a href="assets/images/okc/large/Vacation 047.jpg" data-lightbox="okc" data-title="Tree where firefighters took breaks during rescue efforts"><img src="assets/images/okc/thumbs/Vacation 047.jpg" alt="Tree where firefighters took breaks" /></a>
-          <a href="assets/images/okc/large/Vacation 048.jpg" data-lightbox="okc" data-title="Where Murrah building once stood from tree area"><img src="assets/images/okc/thumbs/Vacation 048.jpg" alt="Where Murrah building once stood from tree" /></a>
-      </div>
-
     </div>
-</div>
+  </div>
 </div>
 
 <footer class="site-footer">

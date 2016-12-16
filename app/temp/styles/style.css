@@ -1536,6 +1536,8 @@ img {
 }
 
 .thumbnails a {
+  color: #FFF;
+  text-decoration: none;
   float: left;
   width: 25%;
   padding-right: 15px;
@@ -1570,6 +1572,10 @@ img {
   -webkit-transform: scale(1) rotate(2deg);
           transform: scale(1) rotate(2deg);
   box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+}
+
+a.hidden{
+  display:none;
 }
 
 /* End Thumbnail Section */
