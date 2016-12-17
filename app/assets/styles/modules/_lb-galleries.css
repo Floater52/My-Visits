@@ -25,14 +25,25 @@ img {
   box-sizing: border-box;
 }
 
-.thumbnails-3-wide a {
-  width: 33.33%;
+.thumbnails-4-wide a {
+  width: 25%;
 }
 
 .thumbnails-6-wide a {
-  width: 16.66%;
+  width: 33.33%;
   padding-left: 10px;
   padding-right: 10px;
+
+  @mixin atMedium {
+    width: 16.66%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.thumbnails h3 {
+  color: #FFF;
+  text-align: center;
 }
 
 .thumbnails img {

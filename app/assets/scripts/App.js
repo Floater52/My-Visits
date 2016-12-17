@@ -7,7 +7,7 @@ import lightbox from './modules/lightbox.min';
 
 var mobileMenu = new MobileMenu();
 new RevealOnScroll($("#trinity"), "45%");
-new RevealOnScroll($("#alligator-farm"), "85%");
+new RevealOnScroll($("#alligator-farm"), "95%");
 new RevealOnScroll($("#ksc"), "60%");
 new  RevealOnScroll($("#random-photos"), "60%");
 var stickyHeader = new StickyHeader();

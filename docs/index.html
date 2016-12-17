@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>My Photos</title>
+  <meta name="keywords" content="Tinity Site, Kennedy Space Center, Alligator Farm, Ronald
+  Reagan House, Jimmy Carter Boyhood Home, John Deere Home, Oklahoma City Memorial">
+  <meta name="description" content="Rick's personal galleries">
+
+  <link rel="stylesheet" href="assets/styles/styles-6ed3292aac.css"/>
+
+  <script src="assets/scripts/Vendor-66fb151268.js"></script>
+
+ <!-- Begin offsite pages controller -->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <script>
+     $(function(){
+        $('.trinity').load("assets/pages/trinity.html"),
+        $('.trinity-text').load("assets/pages/trinity-text.html"),
+        $('.alligator-farm').load("assets/pages/alligator-farm.html"),
+        $('.ksc').load("assets/pages/kennedy-space-center.html"),
+        $('.okc-mem').load("assets/pages/ok-city-memorial.html"),
+        $('.fireworks').load("assets/pages/fireworks.html"),
+        $('.cbh').load("assets/pages/carter-boyhood-home.html"),
+        $('.gc').load("assets/pages/grand-canyon.html"),
+        $('.jdh').load("assets/pages/john-deere-home.html"),
+        $('.reagan').load("assets/pages/reagan.html"),
+        $('#contact-main').load("assets/pages/contact-main.html");
+     });
+  </script>
+  <!-- End offsite pages controller -->
+
+  <!-- Begin Spry Assets for contact form -->
+  <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+  <script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+  <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+  <link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+  <!-- End Spry Assets for contact form -->
+
+</head>
+<body>
+  <!-- Begin Header -->
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">Rick's Photo &amp; Web Design
+        <div class="site-header__logo__graphic"></div>
+      </div>
+
+      <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+      </div>
+
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+          <a href="#" class="btn open-modal">Get in Touch</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#trinity" id="trinity-link">Trinity Site</a></li>
+            <li><a href="#alligator-farm" id="alligator-farm-link">Alligator Farm</a></li>
+            <li><a href="#ksc" id="ksc-link">Kennedy Space Center</a></li>
+              <li><a href="#random-photos" id="random-link">Random Galleries</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <div class="large-hero">
+
+    <picture>
+    <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+    <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+    <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w " media="(min-width: 640px)">
+    <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w " alt="Coastal view of ocean and moutains" class="large-hero__image">
+    </picture>
+
+    <div class="large-hero__text-content">
+        <div class="wrapper">
+            <h1 class="large-hero__title"></h1>
+            <h2 class="large-hero__subtitle"></h2>
+            <p class="large-hero__description"></p>
+            <!--<p><a href="#" class="btn btn--orange btn--large open-modal"></a></p>-->
+        </div>
+    </div>
+  </div>
+
+  <!-- Begin Trinity Site Gallery -->
+  <div id="trinity" class="page-section" data-matching-link="#trinity-link">
+  	<div class="wrapper">
+      <div class="row row--gutters">
+        <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+              <div class="thumbnails group trinity"></div>
+        </div>
+
+        <div class="row__medium-8 row__medium-8--smaller">
+          <div class="generic-content-container">
+            <br />
+            <br />
+            <h2 class="headline headline--no-t-margin">Trinity Site, New Mexico</h2>
+              <p class="trinity-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Trinity Site Gallery -->
+
+  <!-- Begin Alligator Farm Gallery -->
+  <div id="alligator-farm" class="page-section page-section--blue" data-matching-link="#alligator-farm-link">
+    <div class="wrapper">
+      <h2 class="section-title">Alligator Farm<br />St. Augustine, Florida</h2>
+        <br />
+        <br />
+      <div class="row row--gutters-large generic-content-container">
+        <div class="thumbnails thumbnails-6-wide thumbnails-af alligator-farm group">
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Alligator Farm Gallery -->
+
+  <!-- Begin Kennedy Space Center -->
+  <div id="ksc" class="page-section page-section--no-b-padding-until-large
+  page-section--ksc lazyload" data-matching-link="#ksc-link">
+    <div class="wrapper wrapper--no-padding-until-large">
+      <h2 class="section-title section-title--brown">Kennedy Space Center, Florida<span class="icon section-title__icon"></span>
+        <br />
+         <div class="thumbnails thumbnails-6-wide group ksc"><a href="assets/images/ksc/large/1st_manned_orbital_flight.jpg" data-lightbox="ksc" data-title="1st manned orbital flight"><img src="assets/images/ksc/thumbs/1st_manned_orbital_flight.jpg" alt="" /></a>
+         </div>
+      </div>
+  </div>
+  <!-- End Kennedy Space Center -->
+
+  <!-- Begin Other Galleries -->
+  <div id="random-photos" class="page-section page-section--random-photos page-section--blue" data-matching-link="#random-link">
+    <div class="wrapper">
+      <h2 class="section-title">Random Galleries</h2>
+      <br />
+      <br />
+    <div class="row row--gutters-large generic-content-container">
+      <div class="thumbnails thumbnails-6-wide thumbnails-a group">
+      <div class="fireworks"></div>
+      <div class="okc-mem"></div>
+      <div class="cbh"></div>
+      <div class="gc"></div>
+      <div class="jdh"></div>
+      <div class="reagan"></div>
+      <h3>Keep checking. More galleries to follow</h3>
+      </div>
+     </div>
+    </div>
+  </div>
+<!-- End Other Galleries -->
+
+<!-- Begin Footer -->
+<footer class="site-footer">
+  <div class="wrapper">
+    <p><span class="site-footer__text">Copyright &copy; 2016 DugansPlace.com / Rick's Photo &amp; Web Design.
+      All rights reserved.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+  </div>
+</footer>
+<!-- End Footer -->
+
+<!-- Begin Modal -->
+<div class="modal">
+  <div class="modal__inner">
+    <h2 class="section-title section-title--brown section-title--less-margin"><span class="icon icon--mail section-title__icon"></span>
+       Get in <strong>Touch</strong></h2>
+       <div class="wrapper wrapper--narrow">
+         <p class="modal__description">Please use the form below to contact Rick and he will respond to your message as soon as possible!</p>
+         <form id="contact-main" name="contact" method="post" action="sendform.php" onSubmit="alert('Thank you, your message has been sent!');" >
+     			</form>
+                 </div>
+            <!-- Begin Spry Assets for Contact Form -->
+            <script type="text/javascript">
+      				var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "custom", {validateOn:["blur"]});
+      				var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {validateOn:["blur"]});
+      				var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "email", {validateOn:["blur"]});
+      				var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "none", {validateOn:["blur"]});
+      				var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {validateOn:["blur"], maxChars:500, counterType:"chars_remaining", counterId:"countsprytextarea1"});
+      			</script>
+            <!-- End Spry Assets for Contact Form -->
+       </div>
+    <div class="modal__close">X</div>
+  </div>
+  <!-- End Modal -->
+</div>
+
+<script src="assets/scripts/App-35ca091946.js"></script>
+
+</body>
+</html>

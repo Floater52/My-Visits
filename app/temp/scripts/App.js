@@ -74,7 +74,7 @@
 
 	var mobileMenu = new _MobileMenu2.default();
 	new _RevealOnScroll2.default((0, _jquery2.default)("#trinity"), "45%");
-	new _RevealOnScroll2.default((0, _jquery2.default)("#alligator-farm"), "85%");
+	new _RevealOnScroll2.default((0, _jquery2.default)("#alligator-farm"), "95%");
 	new _RevealOnScroll2.default((0, _jquery2.default)("#ksc"), "60%");
 	new _RevealOnScroll2.default((0, _jquery2.default)("#random-photos"), "60%");
 	var stickyHeader = new _StickyHeader2.default();
