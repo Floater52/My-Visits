@@ -1,0 +1,11 @@
+.home img {
+  align-self: center;
+  margin-top: 200px;
+  vertical-align:text-bottom
+
+  @mixin atLarge  {
+    align-self: center;
+    margin-top: 61px;
+    vertical-align:text-bottom
+  }
+}

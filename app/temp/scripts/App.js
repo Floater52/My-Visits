@@ -73,10 +73,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mobileMenu = new _MobileMenu2.default();
-	new _RevealOnScroll2.default((0, _jquery2.default)("#trinity"), "45%");
-	new _RevealOnScroll2.default((0, _jquery2.default)("#alligator-farm"), "70%");
-	new _RevealOnScroll2.default((0, _jquery2.default)("#ksc"), "60%");
-	new _RevealOnScroll2.default((0, _jquery2.default)("#random-photos"), "70%");
 	var stickyHeader = new _StickyHeader2.default();
 	var modal = new _Modal2.default();
 
@@ -2627,7 +2623,7 @@
 	              (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
 	            }
 	          },
-	          offset: "-40%"
+	          offset: "-45%"
 	        });
 	      });
 	    }

@@ -4,10 +4,11 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>My Photos</title>
+  <title>Home</title>
   <meta name="keywords" content="Tinity Site, Kennedy Space Center, Alligator Farm, Ronald
   Reagan House, Jimmy Carter Boyhood Home, John Deere Home, Oklahoma City Memorial">
   <meta name="description" content="Rick's personal galleries">
+
 
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/style.css">
@@ -15,17 +16,21 @@
   <!-- endbuild -->
 
   <!-- build:js assets/scripts/Vendor.js -->
-  <script src="/temp/scripts/Vendor.js"></script>
-  <script src="assets/scripts/modules/lightbox.min.js"></script>
+  <script src="/temp/scripts/Vendor.js">
   <!-- endbuild -->
+
+
+
+  <script src="assets/scripts/modules/lightbox.min.js"></script>
 
  <!-- Begin offsite pages controller -->
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-
   <script>
      $(function(){
+        $('.home').load("assets/pages/home.html"),
         $('.trinity').load("assets/pages/trinity.html"),
-        $('.trinity-text').load("assets/pages/trinity-text.html"),
+        $('.trinity-site').load("assets/pages/trinity-site.html"),
+        $('.gallery').load("assets/pages/gallery.html"),
         $('.alligator-farm').load("assets/pages/alligator-farm.html"),
         $('.ksc').load("assets/pages/kennedy-space-center.html"),
         $('.okc-mem').load("assets/pages/ok-city-memorial.html"),
@@ -39,6 +44,39 @@
      });
   </script>
   <!-- End offsite pages controller -->
+
+  <!-- Begin test highlight current page -->
+  
+  <!-- End test highlight current page -->
+
+  <!-- Test script ajax -->
+  <script>
+  $(document).ready(function(){
+    // Hide div 2 and 3 by default
+    $('#div_3').hide();
+    $('#div_2').hide();
+
+    $('#link_3').click(function() {
+        $('#div_2').hide();
+        $('#div_1').hide();
+        $('#div_3').show();
+    });
+
+    $('#link_2').click(function() {
+        $('#div_3').hide();
+        $('#div_1').hide();
+        $('#div_2').show();
+    });
+
+    $('#link_1').click(function(){
+        $('#div_3').hide();
+        $('#div_2').hide();
+        $('#div_1').show();
+    });
+});
+  </script>
+  <!-- Test Script End -->
+
 
   <!-- Begin Spry Assets for contact form -->
   <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
@@ -66,10 +104,9 @@
         </div>
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#trinity" id="trinity-link">Trinity Site</a></li>
-            <li><a href="#alligator-farm" id="alligator-farm-link">Alligator Farm</a></li>
-            <li><a href="#ksc" id="ksc-link">Kennedy Space Center</a></li>
-              <li><a href="#random-photos" id="random-link">Random Galleries</a></li>
+            <li><a href="#home" id="link_1" >Home</a></li>
+            <li><a href="#trinity-site" id="link_2">Trinity Site</a></li>
+            <li><a href="#gallery" id="link_3">Gallery</a></li>
           </ul>
         </nav>
       </div>
@@ -78,14 +115,14 @@
   <!-- End Header -->
 
   <div class="large-hero">
-
+<!--
     <picture>
     <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
     <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
     <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w " media="(min-width: 640px)">
-    <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w " alt="Coastal view of ocean and moutains" class="large-hero__image">
+    <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w " alt="My Photo's" class="large-hero__image">
     </picture>
-
+-->
     <div class="large-hero__text-content">
         <div class="wrapper">
             <h1 class="large-hero__title"></h1>
@@ -96,73 +133,13 @@
     </div>
   </div>
 
-  <!-- Begin Trinity Site Gallery -->
-  <div id="trinity" class="page-section" data-matching-link="#trinity-link">
-  	<div class="wrapper">
-      <div class="row row--gutters">
-        <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
-              <div class="thumbnails group trinity"></div>
-        </div>
-
-        <div class="row__medium-8 row__medium-8--smaller">
-          <div class="generic-content-container">
-            <br />
-            <br />
-            <h2 class="headline headline--no-t-margin">Trinity Site, New Mexico</h2>
-              <p class="trinity-text"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Trinity Site Gallery -->
-
-  <!-- Begin Alligator Farm Gallery -->
-  <div id="alligator-farm" class="page-section page-section--blue" data-matching-link="#alligator-farm-link">
-    <div class="wrapper">
-      <h2 class="section-title">Alligator Farm<br />St. Augustine, Florida</h2>
-        <br />
-        <br />
-      <div class="row row--gutters-large generic-content-container">
-        <div class="thumbnails thumbnails-6-wide thumbnails-af alligator-farm group">
-          </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Alligator Farm Gallery -->
-
-  <!-- Begin Kennedy Space Center -->
-  <div id="ksc" class="page-section page-section--no-b-padding-until-large
-  page-section--ksc lazyload" data-matching-link="#ksc-link">
-    <div class="wrapper wrapper--no-padding-until-large">
-      <h2 class="section-title section-title--brown">Kennedy Space Center, Florida<span class="icon section-title__icon"></span>
-        <br />
-         <div class="thumbnails thumbnails-6-wide group ksc"><a href="assets/images/ksc/large/1st_manned_orbital_flight.jpg" data-lightbox="ksc" data-title="1st manned orbital flight"><img src="assets/images/ksc/thumbs/1st_manned_orbital_flight.jpg" alt="" /></a>
-         </div>
-      </div>
-  </div>
-  <!-- End Kennedy Space Center -->
-
-  <!-- Begin Other Galleries -->
-  <div id="random-photos" class="page-section page-section--random-photos page-section--blue" data-matching-link="#random-link">
-    <div class="wrapper">
-      <h2 class="section-title">Random Galleries</h2>
-      <br />
-      <br />
-    <div class="row row--gutters-large generic-content-container">
-      <div class="thumbnails thumbnails-6-wide thumbnails-a group">
-      <div class="fireworks"></div>
-      <div class="okc-mem"></div>
-      <div class="cbh"></div>
-      <div class="gc"></div>
-      <div class="jdh"></div>
-      <div class="reagan"></div>
-      <div class="sedona"></div>
-      </div>
-     </div>
-    </div>
-  </div>
-<!-- End Other Galleries -->
+  <!-- Begin Main Page area -->
+<div class="main">
+  <div id="div_1" class="home"></div>
+  <div id="div_2" class="trinity-site"></div>
+  <div id="div_3" class="gallery"></div>
+</div>
+  <!-- End Main Page Area -->
 
 <!-- Begin Footer -->
 <footer class="site-footer">
@@ -182,25 +159,39 @@
          <p class="modal__description">Please use the form below to contact Rick and he will respond to your message as soon as possible!</p>
          <form id="contact-main" name="contact" method="post" action="sendform.php" onSubmit="alert('Thank you, your message has been sent!');" >
      			</form>
-                 </div>
+        </div>
             <!-- Begin Spry Assets for Contact Form -->
             <script type="text/javascript">
-      				var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "custom", {validateOn:["blur"]});
-      				var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {validateOn:["blur"]});
-      				var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "email", {validateOn:["blur"]});
-      				var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "none", {validateOn:["blur"]});
-      				var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {validateOn:["blur"], maxChars:500, counterType:"chars_remaining", counterId:"countsprytextarea1"});
-      			</script>
+              var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "custom", {validateOn:["blur"]});
+              var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {validateOn:["blur"]});
+              var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "email", {validateOn:["blur"]});
+              var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "none", {validateOn:["blur"]});
+              var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {validateOn:["blur"], maxChars:500, counterType:"chars_remaining", counterId:"countsprytextarea1"});
+            </script>
             <!-- End Spry Assets for Contact Form -->
        </div>
     <div class="modal__close">X</div>
   </div>
   <!-- End Modal -->
-</div>
 
 <!-- build:js assets/scripts/App.js -->
 <script src="/temp/scripts/App.js"></script>
 <!-- endbuild -->
+
+<!-- Begin Test javascript -->
+<script>
+$('nav li').click(function() {
+$.ajax({
+  type: 'GET',
+  url: 'assets/pages/'+$(this).data('content')+'.html',
+  dataType: 'html',
+  success: function(response) {
+    $('.ext-content').html(response);
+  }
+});
+});
+</script>
+<!-- End Test javascript -->
 
 </body>
 </html>

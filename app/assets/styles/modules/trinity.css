@@ -1,0 +1,22 @@
+.trinity-site img {
+  padding-left: 60px;
+  margin-top: 100px;
+  position: relative;
+
+  @mixin atLarge  {
+  width: 25%;
+  float: left;
+  margin-top: 80px;
+  padding-right: 20px;
+  position: absolute;
+  }
+}
+
+.trinity-text {
+
+  @mixin atLarge  {
+  width: 66.66;
+  float: left;
+  margin-left: 600px;
+  }
+}

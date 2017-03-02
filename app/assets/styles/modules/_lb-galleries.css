@@ -29,6 +29,16 @@ img {
   width: 25%;
 }
 
+.thumbnails-5-wide a {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @mixin atLarge  {
+      width: 20%;
+  }
+}
+
 .thumbnails-6-wide a {
   width: 33.33%;
   padding-left: 10px;
@@ -60,6 +70,10 @@ img {
   opacity: 1;
   transform: scale(1) rotate(2deg);
   box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+}
+
+#trinity a {
+  text-decoration: none;
 }
 
 a.hidden{

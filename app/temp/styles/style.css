@@ -447,6 +447,7 @@ a	{
 
 .large-hero__image	{
   width: 100%;
+  margin-top: 0;
   display: block;
 }
 
@@ -589,10 +590,10 @@ a	{
   }
 }
 
-.wrapper .wrapper	{
-  padding-left: 0;
-  padding-right: 0;
-}
+/*.wrapper	{
+		padding-left: 0;
+		padding-right: 0;
+	}*/
 
 .wrapper--b-margin	{
   margin-bottom: 1rem;
@@ -638,7 +639,7 @@ a	{
   }
 }
 
-.page-section--blue	{
+.page-section--brown	{
   background-color: #8B4513;
   color: #FFF;
 }
@@ -655,7 +656,7 @@ a	{
   }
 }
 
-.page-section--random-photos	{
+.page-section--gallery	{
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #A0522D;
@@ -852,6 +853,7 @@ a	{
 }
 
 .generic-content-container p {
+  align: right;
   font-weight: 300;
   line-height: 1.65;
   margin: 0 0 1.8rem 0;
@@ -1039,7 +1041,7 @@ Instead edit gulp/templates/sprite */
   left: 0;
   width: 20px;
   height: 3px;
-  background-color: #FFF;
+  background-color: #d59541;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transition: -webkit-transform .3s ease-out;
@@ -1054,7 +1056,7 @@ Instead edit gulp/templates/sprite */
   left: 0;
   width: 20px;
   height: 3px;
-  background-color: #FFF;
+  background-color: #d59541;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
   -webkit-transform-origin: 0 50%;
@@ -1068,7 +1070,7 @@ Instead edit gulp/templates/sprite */
   left: 0;
   width: 20px;
   height: 3px;
-  background-color: #FFF;
+  background-color: #d59541;
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
   -webkit-transition: -webkit-transform .3s ease-out;
@@ -1160,6 +1162,9 @@ Instead edit gulp/templates/sprite */
 }
 
 .primary-nav li {
+  color: #FFF;
+  font-weight: 300;
+  padding: 5px 8px;
   list-style: none;
   display: inline-block;
   padding-right: 7px;
@@ -1174,7 +1179,7 @@ Instead edit gulp/templates/sprite */
   }
 }
 
-.primary-nav li:last-child{
+.primary-nav li:last-child {
   padding-right: 0;
 }
 
@@ -1208,6 +1213,11 @@ Instead edit gulp/templates/sprite */
   }
 }
 
+.primary-nav .current {
+    color:            ;
+    background-color: #4f81bd;
+}
+
 .reveal-item  {
   opacity: 0;
   -webkit-transition: all 1.5s ease-out;
@@ -1222,7 +1232,9 @@ Instead edit gulp/templates/sprite */
           transform: scale(1);
 }
 
-.modal  {
+/* Start Modal */
+
+.modal {
   position: fixed;
   z-index: 5;
   background-color: rgba(255, 255, 255, .94);
@@ -1276,13 +1288,15 @@ Instead edit gulp/templates/sprite */
           transform: scaleX(1.2);
   -webkit-transform-origin: 100% 0;
           transform-origin: 100% 0;
-  color: #2f5572;
+  color: #8B4513;
   cursor: pointer;
 }
 
 .modal__close:hover {
   color: #d59541;
 }
+
+/* End Modal */
 
 .social-icons {
   text-align: center;
@@ -1550,6 +1564,19 @@ img {
   width: 25%;
 }
 
+.thumbnails-5-wide a {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 1010px) {
+
+  .thumbnails-5-wide a {
+    width: 20%;
+  }
+}
+
 .thumbnails-6-wide a {
   width: 33.33%;
   padding-left: 10px;
@@ -1589,6 +1616,10 @@ img {
   box-shadow: 0 0 7px rgba(0, 0, 0, .5);
 }
 
+#trinity a {
+  text-decoration: none;
+}
+
 a.hidden{
   display:none;
 }
@@ -1601,6 +1632,7 @@ a.hidden{
   width: 100%;
   align: center;
   padding-left: 25px;
+  padding-bottom: 25px;
   background-color: #D2B48C;
 }
 
@@ -1630,4 +1662,39 @@ a.hidden{
   float: left;
   width: 90%;
   height: auto;
+}
+
+.trinity-site img {
+  padding-left: 60px;
+  margin-top: 100px;
+  position: relative;
+}
+
+@media (min-width: 1010px) {
+
+  .trinity-site img {
+    width: 25%;
+    float: left;
+    margin-top: 80px;
+    padding-right: 20px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .trinity-text {
+    width: 66.66;
+    float: left;
+    margin-left: 600px;
+  }
+}
+
+.gallery h2 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.gallery h3 {
+  padding-top: 50px;
 }

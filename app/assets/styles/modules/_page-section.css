@@ -21,7 +21,7 @@
 	    }
 	}
 
-	&--blue	{
+	&--brown	{
 		background-color: $mainBrown;
 		color: #FFF;
 	}
@@ -37,7 +37,7 @@
 	}
 	}
 
-	&--random-photos	{
+	&--gallery	{
 		align-content: center;
 		background-color: $mainSienna;
 	}

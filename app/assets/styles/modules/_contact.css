@@ -2,6 +2,7 @@
   width: 100%;
   align: center;
   padding-left: 25px;
+  padding-bottom: 25px;
   background-color: $mainTan;
 }
 
@@ -32,4 +33,3 @@
   width: 90%;
   height: auto;
 }
- 
